@@ -1,0 +1,925 @@
+<!--
+This site was originally made by Cooper Ross, but it free for anyone to use or edit.
+A lot of the code was "borrowed" from codepen/github or my past projects anyway.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manning Robotics</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Meta -->
+  <meta name="description" content="The homepage for FRC Team 4627, the Ernest Manning High School Robotics Team">
+  <meta name="keywords" content="Robotics, Calgary, EMHS, FRC, FRC 4627, Ernest Manning Robotics, Ernest Manning High School">
+  <meta name="author" content="Cooper Ross">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<!-- Dark theme default ;) -->
+<body id="top" class="dark_theme">
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#"><img src="/assets/images/logo.png" width="30" alt="FRC Team 4627 Logo"></a>
+        <a href="#">Manning<br>Robotics</a>
+      </h1>
+
+      <div class="navbar-actions">
+        
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#awards" class="navbar-link">Awards</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="overlay" data-nav-toggler data-overlay></div>
+
+  <main>
+    <article class="container">
+
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <figure class="hero-banner" data-reveal-delay="0.0s" data-reveal="top">
+          <picture>
+            <!-- Initially intended to have different sizes, worth doing if photos are ever converted to webp in the future. -->
+            <img src="./assets/images/hero-banner.png" alt="A group photo of the 2023 Manning Robotics Team"
+              class="w-100">
+          </picture>
+        </figure>
+      </section>
+
+      <!-- Hero Stats -->
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <a href="#about" class="stats-card">
+
+              <div class="card-icon">
+                <ion-icon name="calendar-outline" alt="calendar icon"></ion-icon>
+              </div>
+
+              <h2 class="h2 card-title">
+                2013 <strong>Year Established</strong>
+              </h2>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.1s" data-reveal="bottom">
+            <a href="#home" class="stats-card">
+
+              <div class="card-icon">
+                <ion-icon name="people-circle-outline" alt="people icon"></ion-icon>
+              </div>
+
+              <h2 class="h2 card-title">
+                45+ <strong>Team Members</strong>
+              </h2>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="bottom">
+            <a href="#awards" class="stats-card">
+
+              <div class="card-icon">
+                <ion-icon name="trophy-outline" alt="trophy icon"></ion-icon>
+              </div>
+
+              <h2 class="h2 card-title">
+                21 <strong>Awards Won</strong>
+              </h2>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- About Us -->
+      <a class="anchor" id="about"></a> <!-- Anchor here is to fix absolute header positioning offset. -->
+      <section class="about">
+
+        <figure class="about-banner" data-reveal-delay="0.0s" data-reveal="left">
+          <img loading="lazy" src="./assets/images/thor.png" alt="The Thor robot from 2023, picking up a yellow traffic cone"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content" data-reveal-delay="0.0s" data-reveal="right">
+
+          <p class="section-subtitle">About Us</p>
+
+          <h2 class="h3 section-title" data-reveal-delay="0.0s" data-reveal="right">What are we all about?</h2>
+
+          <p class="section-text" data-reveal-delay="0.1s" data-reveal="right">
+            A bit of our history: we are a team based in Calgary, Alberta, a city with a labour force heavily influenced by mechanics, engineers, and tradespeople.
+
+            Manning Robotics Team 4627 was established in 2013 and started with just 10 students and 3 mentors.
+
+            That same season, we won the Rookie All-Star Award at the Western Canada Regional Championship. Since then, we have grown into a group of 45 students with 12 teachers and volunteer mentors, and proven ourselves both nationally and internationally.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- Sponsors -->
+      <section class="sponsors" id="sponsors">
+
+        <div class="container">
+
+          <div class="about-content section-content" data-reveal-delay="0.0s" data-reveal="right">
+
+            <p class="section-subtitle">2025</p>
+  
+            <h2 class="h3 section-title" data-reveal-delay="0.0s" data-reveal="right">Our Sponsors</h2>
+  
+            <p class="section-text" data-reveal-delay="0.1s" data-reveal="right">
+              Our success as a robotics team wouldn't be possible without the incredible support of our sponsors. Your generosity empowers us to innovate, learn, and compete at our best. With your help, we're not just building robots — we're building the future. Thank you for believing in us and making all of this possible.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="container brandsCarousel" data-reveal-delay="0.0s" data-reveal="bottom">
+
+          <div class="d-flex carouselTrack">
+
+            <div class="brandLogo" data-reveal-delay="0.0s" data-reveal="bottom">
+              <a href="https://www.ghaasfoundation.org/" aria-label="The gene haas foundation website">
+                <img loading="lazy" id="brandLogo-01" src="/assets/images/sponsors/gene-haas-foundation.png" alt="The gene haas foundation logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.05s" data-reveal="bottom">
+              <a href="https://www.nhl.com/flames/" aria-label="The calgary flames offical nhl website">
+                <img loading="lazy" id="brandLogo-02" src="/assets/images/sponsors/calgary-flames.png" alt="The calgary flames logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.1s" data-reveal="bottom">
+              <a href="https://bunch.ca/" aria-label="The bunch projects website">
+                <img loading="lazy" id="brandLogo-03" src="/assets/images/sponsors/bunch-projects.png" alt="The bunch projects logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.15s" data-reveal="bottom">
+              <a href="https://www.seebe.ca/" aria-label="The seebe website">
+                <img loading="lazy" id="brandLogo-04" src="/assets/images/sponsors/seebe.png" alt="The seebe logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.2s" data-reveal="bottom">
+              <a href="https://www.enerflex.com/" aria-label="The enerflex website">
+                <img loading="lazy" id="brandLogo-05" src="/assets/images/sponsors/enerflex.png" alt="The enerflex logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.25s" data-reveal="bottom">
+              <a href="https://www.rangelandeng.com/" aria-label="The rangeland engineering website">
+                <img loading="lazy" id="brandLogo-06" src="/assets/images/sponsors/rangeland-engineering.png" alt="The rangeland engineering logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.3s" data-reveal="bottom">
+              <a href="https://klohn.com/" aria-label="The klohn crippen berger website">
+                <img loading="lazy" id="brandLogo-07" src="/assets/images/sponsors/klohn-crippen-berger.png" alt="The  klohn crippen berger logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.35s" data-reveal="bottom">
+              <a href="https://www.spartancontrols.com/" aria-label="The spartan controls website">
+                <img loading="lazy" id="brandLogo-08" src="/assets/images/sponsors/spartan-control.png" alt="The spartan controls logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.4s" data-reveal="bottom">
+              <a href="https://www.cornerstoneeng.ca/" aria-label="The cornerstone engineering website">
+                <img loading="lazy" id="brandLogo-09" src="/assets/images/sponsors/cornerstone-engineering.png" alt="The cornerstone engineering logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.45s" data-reveal="bottom">
+              <a href="https://argosycapital.com/" aria-label="The argosy capital website">
+                <img loading="lazy" id="brandLogo-10" src="/assets/images/sponsors/agrosy-fund.png" alt="The argosy capital logo">
+              </a>
+            </div>
+
+
+            <div class="brandLogo" data-reveal-delay="0.5s" data-reveal="bottom">
+              <a href="https://www.ghaasfoundation.org/" aria-label="The gene haas foundation website">
+                <img loading="lazy" id="brandLogo-01" src="/assets/images/sponsors/gene-haas-foundation.png" alt="The gene haas foundation logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.55s" data-reveal="bottom">
+              <a href="https://www.nhl.com/flames/" aria-label="The calgary flames offical nhl website">
+                <img loading="lazy" id="brandLogo-02" src="/assets/images/sponsors/calgary-flames.png" alt="The calgary flames logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.6s" data-reveal="bottom">
+              <a href="https://bunch.ca/" aria-label="The bunch projects website">
+                <img loading="lazy" id="brandLogo-03" src="/assets/images/sponsors/bunch-projects.png" alt="The bunch projects logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.65s" data-reveal="bottom">
+              <a href="https://www.seebe.ca/" aria-label="The seebe website">
+                <img loading="lazy" id="brandLogo-04" src="/assets/images/sponsors/seebe.png" alt="The seebe logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.7s" data-reveal="bottom">
+              <a href="https://www.enerflex.com/" aria-label="The enerflex website">
+                <img loading="lazy" id="brandLogo-05" src="/assets/images/sponsors/enerflex.png" alt="The enerflex logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.75s" data-reveal="bottom">
+              <a href="https://www.rangelandeng.com/" aria-label="The rangeland engineering website">
+                <img loading="lazy" id="brandLogo-06" src="/assets/images/sponsors/rangeland-engineering.png" alt="The rangeland engineering logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.8s" data-reveal="bottom">
+              <a href="https://klohn.com/" aria-label="The klohn crippen berger website">
+                <img loading="lazy" id="brandLogo-07" src="/assets/images/sponsors/klohn-crippen-berger.png" alt="The  klohn crippen berger logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.85s" data-reveal="bottom">
+              <a href="https://www.spartancontrols.com/" aria-label="The spartan controls website">
+                <img loading="lazy" id="brandLogo-08" src="/assets/images/sponsors/spartan-control.png" alt="The spartan controls logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.9s" data-reveal="bottom">
+              <a href="https://www.cornerstoneeng.ca/" aria-label="The cornerstone engineering website">
+                <img loading="lazy" id="brandLogo-09" src="/assets/images/sponsors/cornerstone-engineering.png" alt="The cornerstone engineering logo">
+              </a>
+            </div>
+
+            <div class="brandLogo" data-reveal-delay="0.95s" data-reveal="bottom">
+              <a href="https://argosycapital.com/" aria-label="The argosy capital website">
+                <img loading="lazy" id="brandLogo-10" src="/assets/images/sponsors/agrosy-fund.png" alt="The argosy capital logo">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      
+      <!-- Past Projects (later renamed Past Competitions) -->
+      <section class="project" id="project">
+
+        <ul class="project-list">
+
+          <li data-reveal-delay="0.0s" data-reveal="right">
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">2021-2024</p>
+
+              <h2 class="h3 section-title">Past Competitions</h2>
+
+              <p class="section-text">
+                Check out some of our past projects and competitions! We also have a YouTube channel where we post regular progress updates.
+              </p>
+
+            </div>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="left">
+            <a href="https://x.com/ManningRobotics/status/1500132296715767808" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-1.png" class="w-100" alt="A stage with the FIRST robotics logo and 3 robots in competition">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">First Day of FRC</h3>
+
+                <time class="publish-date" datetime="2022-04">Mar 5, 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="top">
+            <a href="https://x.com/ManningRobotics/status/1763083417128972538" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-2.png" class="w-100" alt="A group photo of the members who participated in the crescendo FIRST competition">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Crescendo Team</h3>
+
+                <time class="publish-date" datetime="2022-04">Feb 28, 2024</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="left">
+            <a href="https://www.youtube.com/watch?v=NSs6_JU8U6c" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-3.png" class="w-100"
+                  alt="A robot shooting a orange hoop into the bin for the practice competition">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Week 7, Build Season</h3>
+
+                <time class="publish-date" datetime="2022-04">Feb 25, 2024</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="bottom">
+            <a href="https://x.com/ManningRobotics/status/1464012657573261348" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-4.png" class="w-100"
+                  alt="Students programming and editing and building for the Romi Mini-Competition">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Romi Mini-Competition</h3>
+
+                <time class="publish-date" datetime="2022-04">Nov 25, 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="right">
+            <a href="https://www.youtube.com/watch?v=9EkHGf0aubk" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-5.png" class="w-100"
+                  alt="The 2023 Thor robot showcasing it's ability for the first time">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Robot Reveal</h3>
+
+                <time class="publish-date" datetime="2022-04">Jul 24, 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="right">
+            <a href="https://x.com/ManningRobotics/status/1462975815822426112" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100"
+                  alt="A student showing part of the electronics and the diagram for his Romi team">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Romi Mini-Competition</h3>
+
+                <time class="publish-date" datetime="2022-04">Nov 22, 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li data-reveal-delay="0.2s" data-reveal="top">
+            <a href="https://x.com/ManningRobotics/status/1630952291242213376" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-7.png" class="w-100"
+                  alt="A group photo of the members who participated in the 2023 FIRST competition with Thor">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Off to Competition with Thor</h3>
+
+                <time class="publish-date" datetime="2022-04">Mar 1, 2023</time>
+              </div>
+
+            </a>
+          </li>
+        </ul>
+
+      </section>
+
+      <!-- Awards -->
+      <a class="anchor" id="awards"></a>
+      <section class="awards">
+
+        <div class="container">
+
+          <div class="about-content section-content" data-reveal-delay="0.0s" data-reveal="right">
+
+            <p class="section-subtitle">2013-2025</p>
+  
+            <h2 class="h3 section-title" data-reveal-delay="0.0s" data-reveal="right">Awards</h2>
+  
+            <p class="section-text" data-reveal-delay="0.1s" data-reveal="right">
+              For the FIRST Robotics Competition, awards are grouped into four categories: Machine, Creativity, and Innovation Awards, Team Attribute Awards, Submitted Awards, and Robot Performance Awards. We've won over 21 in all of our past competitions combined, spanning almost 12 years of remarkable success!
+            </p>
+
+          </div>
+
+        </div>
+
+        <ul class="awards-list has-scrollbar">
+
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              
+              <h2 class="h2 card-title">
+                <strong>Excellence in Engineering Award: 2024 Canadian Pacific</strong>
+              </h2>
+
+            </div>
+          </li>
+
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Autonomous Award: 2023 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Creativity Award: 2022 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Entrepreneurship Award: 2020 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Creativity Award: 2019 Canadian Rockies</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Entrepreneurship Award: 2019 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Regional Finalists: 2019 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Gracious Professionalism Award: 2018 Canadian Rockies</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Dean's List Finalist Award: 2018 Canadian Rockies</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Wildcard: 2018 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Imagery Award: 2018 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Regional Finalists: 2018 Canadian Pacific</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Gracious Professionalism Award: 2017 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Dean's List Finalist Award: 2016 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Industrial Safety Award: 2015 Great Toronto East</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Industrial Safety Award: 2015 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Gracious Professionalism Award: 2015 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Team Spirit Award: 2014 Greater Toronto East</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Industrial Safety Award: 2014 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Judges Award: 2014 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+          <li data-reveal-delay="0.0s" data-reveal="bottom">
+            <div class="award-card">
+              <h2 class="h2 card-title">
+                <img src="/assets/images/first.png" alt="FIRST Robotics Competition logo"> FIRST Robotics Competition
+              </h2>
+              <h2 class="h2 card-title">
+                <strong>Rookie All Star Award: 2013 Western Canada</strong>
+              </h2>
+            </div>
+          </li>
+          
+
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <a class="anchor" id="contact"></a>
+      <section class="contact">
+
+        <div class="contact-content section-content" data-reveal-delay="0.0s" data-reveal="right">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Got a Question? Ask!</h2>
+
+          <p class="section-text">
+            If you've got any questions or concerns and would like to let us know, you can either send us an email or sumbit the form. If you need a faster response, the email route might be best.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+                <address class="contact-info">
+                  <a class="contact-info" href="https://www.google.ca/maps/place/Ernest+Manning+High+School+%7C+Calgary+Board+of+Education/@51.0356787,-114.1908578,19z/data=!4m6!3m5!1s0x53716de04a80524f:0xdac5afe84b70ec33!8m2!3d51.0355639!4d-114.1902834!16s%2Fm%2F080bg_q?entry=ttu&g_ep=EgoyMDI1MDIwNS4wIKXMDSoASAFQAw%3D%3D">
+                    20 Springborough Blvd SW, Calgary, AB T3H 0N7
+                  </a>
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:014038626011" class="contact-info">(01) 403-862-6011</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:manningrobotics@gmail.com" class="contact-info">manningrobotics@gmail.com</a>
+
+                <a href="mailto:rmmcmanus@cbe.ab.ca" class="contact-info">rmmcmanus@cbe.ab.ca</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://github.com/4627ManningRobotics" class="contact-social-link">
+                    <div class="tooltip">GitHub</div>
+
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://x.com/ManningRobotics" class="contact-social-link">
+                    <div class="tooltip">X (Twitter)</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.tiktok.com/@4627mib?_t=8fFbrQw4RyH&_r=1" class="contact-social-link">
+                    <div class="tooltip">TikTok</div>
+
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.youtube.com/@ManningRobotics" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="index.html" class="contact-form" netlify data-reveal-delay="0.0s" data-reveal="left">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input autocomplete="given-name" type="text" name="name" id="name" required placeholder="e.g. John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input autocomplete="email" type="email" name="email" id="email" required placeholder="e.g. johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input autocomplete="tel" type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer (really simple) -->
+  <footer class="footer">
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <img src="/assets/images/logo.png" width="20" alt="FRC Team 4627 Logo">
+        <a href="#">Manning Robotics</a>
+      </h1>
+
+      <p class="copyright">
+        &copy; 2025 Ernest Manning High School. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+  <!-- Scripts -->
+  <script src="assets/lib/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
