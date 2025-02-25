@@ -412,6 +412,13 @@ a.anchor {
   transition: 0.35s cubic-bezier(0.68, -0.55, 0.27, 2);
 }
 
+.rainbow-text {
+  background-image: linear-gradient(to left, rgb(238, 216, 18), rgb(255, 153, 0), rgb(255, 230, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
 .navbar.active .navbar-link {
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -427,6 +434,10 @@ a.anchor {
   width: 0;
   background: var(--manning-blue);
   transition: var(--transition-1);
+}
+
+.rainbow-text::before {
+  background: #ffbb00;
 }
 
 .navbar-link:is(:hover, :focus)::before { width: 100%; }
